@@ -1,0 +1,10 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Default rule - adjust based on your security requirements
+    match /{document=**} {
+      allow read, write: if true; // TODO: Update with proper security rules
+    }
+  }
+}
