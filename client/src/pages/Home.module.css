@@ -6,28 +6,37 @@
   min-height: 100vh;
   padding: var(--page-padding);
   text-align: center;
-  gap: var(--space-md);
+  gap: var(--space-xl);
   user-select: none;
 }
 
+.logoSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
 .logo {
-  width: 120px;
+  width: 160px;
   height: auto;
   pointer-events: none;
 }
 
 @media (min-width: 640px) {
   .logo {
-    width: 160px;
+    width: 200px;
   }
 }
 
-.container h1 {
-  font-size: var(--text-4xl);
-  color: var(--primary);
+.tagline {
+  font-size: var(--text-lg);
+  color: var(--text-light);
+  font-weight: 400;
 }
 
-.container p {
-  font-size: var(--text-xl);
+.comingSoon {
+  font-size: var(--text-2xl);
   color: var(--text-light);
+  font-weight: 500;
 }
